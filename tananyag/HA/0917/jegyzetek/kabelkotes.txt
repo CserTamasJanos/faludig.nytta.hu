@@ -1,0 +1,10 @@
+Kábelkötés
+
+- egyenes kötésû LAN
+- kereszt kötésû LAN
+
+Egyenes:	végpont - közvetítõ eszköz
+		közvetítõ eszköz - forgalomirányító (router)
+
+Kereszt:	azonos kategoriájút kötünk
+		végpont - router

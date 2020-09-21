@@ -1,0 +1,68 @@
+---- ESZKÖZÖK ----
+
+
+
+Végponti eszközök
+	-
+	-
+	-
+
+
+Hálózati hozzáférést biztosító eszközök
+	switch
+	hub
+	repeater
+
+Hálózat összekapcsoló eszközök (több hálózatot kapcsolnak össze)
+	router (soho-router - otthoni kis router, több funkciója van) - nagy router a router
+
+Biztonsági eszközök
+	tûzfal - hardveres
+
+
+---- HÁLÓZATI ÁTVITELI KÖZEG (MEDIA) ----
+
+
+
+fémvezetékek
+üveg, mûanyag szálak
+vezeték nélküli átvitel
+
+---- TOPOLÓGIÁK ----
+
+
+
+Koax kábeles
+	- sin
+	- gyûrû
+		(halfduplex kapcsolat)
+			-???
+
+Koax utáni
+	- csillag - kell plusz ezsköz pl.: switch/hub
+	- fa - egy elosztó eszköz több elosztóeszközhöz kapcsolódik
+	- teljes - lényege, hogy ha egy node kiesik, a többi él (routereknél jó, hogy több útvonal lehet)
+
+---- HÁLÓZATTÍPUSOK ----
+
+
+
+LAN - 300-nál több végpont??? - 1 épület/szervezet/rendszergazda
+WAN - pl.: egyországnak v. kontinensnek törhálózata v. teljes világháló - szolgáltató szervezetek/cégek (ISP - Internet Service Provider)
+
+- egyéb
+MAN - pl.: kábeltévé, posta, rendõrség (saját?)
+WLAN - vezeték nélküli LAN
+SAN - kis szerverfarmoktól a nagy szerverfarmokig minden adattároló hálózat
+	(logikailag lehet helyi hálózat is)
+
+PAN - Personal Area Network - személyi hálózat - 1 végpont meg a perifériái
+SOHO - Small Office Home Office - kis iroda/otthoni iroda (hálózat)
+	1 db SOHO router + rácsatlakoztatott eszközök
+
+---- CSATLAKOZÁS AZ INTERNETHEZ ----
+
+
+(ADSL - Assymetric DSL)
+
+	

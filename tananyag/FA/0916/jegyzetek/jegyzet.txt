@@ -1,0 +1,93 @@
+Weblapkészítés folyamata
+
+	* Célok meghatározása
+		típus
+		célközönség
+		célplatform (céleszköz pl.: telefon, asztali...)
+		tartalom
+		...
+		(érdekesség: szemmozgás alapján, hogyan és mit olvasunk el - 30-40%-át)
+
+	* Tervezés
+		HTML		1. tartalmi (bekezdések, címek, gombok, ...) - drótváz: konkrét elemek meghatározása pl.: lerajzolom? !- drótvázat fogunk csinálni - mi jelenjen meg a felhasználónak
+		CSS		2. grafikai tervezés (nem lesz) - hogy nézzen ki
+		PHP (+ JS) 	*. funkciók tervezése pl.: bejelentkezés, adatbázishoz való kapcsolódás - hogyan mûködjön
+
+	* Implementálás
+		kódolás - !- fogjuk csinálni - HTML, CSS, JS
+		tesztelés
+		validálás - ha van idõnk - a kész kód a legfrissebb szabványoknak megfelel-e (tiszta kód)
+		javítás GOTO kód/teszt/valid
+
+	* Átadás - szerzõdéstõl függ
+
+
+
+HTML5 szabványt használjuk
+
+html01:
+	1. sor szabvány
+	html - ???
+	head - böngészõnek információ
+	body - látogatónak
+
+szintaktika def= nyelvhelyesség
+szemantika def= logikai helyesség
+
+kezdõ - <tag>
+záró - </tag>
+tulajdonság - <tag attribute="value">
+meta tag - információs tag a head-ben - <meta attribute="value"/> (önmagát záró tag-ek <tag attribute="value"/>
+
+bekezdés szintû elemek - ??? - formázás
+szöveg szintû elemek - ??? - formázás
+
+logikai elkülönítõ elem - <div></div> - bármi kerülhet bele (nem mindenbe kerülhet bármi)
+
+fontosabb tagek:
+
+---- bekezdés szintû
+
+címsor - <h1></h1> 1-tõl 6-ig
+
+- más böngészõk máshogy jelenít(het)ik meg a különbözõ tegeket a saját beállításai szerint
+
+bekezdés - <p></p>
+sortörés - <br />
+szekció amin belül tab és sortörés megjelenik - <pre></pre>
+vonal - <hr />
+comment - <!-- comment -->
+
+---- szöveg szintû
+
+vastag szöveg - <b></b> - <strong></strong>
+dõlt szöveg - <i></i>
+idézet - <q></q>
+
+- igyekezzünk mindig valamien container?-be rakni a szöveget, hogy ne maradjon ki formázásnál (stílus)
+
+felsõ index - <sup></...>
+alsó index - <sub></...>
+kijelölés - <mark></...>
+
+- attribute: title - bármilyen tagnél
+
+jobbról balra írás - <bdo dir="ltr"></bdo> - dir="rtl" right to left, ltr left to right
+
+- w3schools.com - referencia
+
+
+
+
+
+minden fájl, ezek között szeretnénk "mászkálni"
+elérési útvonal:
+
+- absolute path
+- relative path
+
+- legfontosabb tag:
+link - <a></a>
+	attributes:
+		href - link/hiperreferencia?
+		target - hogyan nyíljon meg az új lap

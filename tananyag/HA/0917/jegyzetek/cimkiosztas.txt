@@ -1,0 +1,8 @@
+Címkiosztás
+
+	táblába, csak azokat az eszközöket, amiknek van IP címe
+
+NIC - hálóztati kártya
+	Network - hálózat
+	Interface - szoftveres/hardveres = port
+	Card - kártya
