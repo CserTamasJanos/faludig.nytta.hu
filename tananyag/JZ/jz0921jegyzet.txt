@@ -1,0 +1,26 @@
+Bevezetés a programozásba
+	IDE - PyCharm
+		text editor
+		compiler
+		debugger
+
+program def= adat + algoritmus
+	adatokon végzett mûveletek/utasítások sorozata
+	forráskód - a számítógép számára érthetõ nyelven van megfogalmazva
+	algoritmus
+	pl.: 3*4
+		adatok 4, 5
+		* - operátor - ???
+		
+input -> algoritmus -> output
+
+python-ról röviden:
+	általános célú, nagyon magas szintû programozási nyelv
+	tervezési filozófia: emberközpontúság, olvashatóság
+	elsõsorban funkcionális programozási nyelv, de késõbb objektumorientált elemek isé pültek bele
+	
+!!!$ C#-ban!!!
+
+python.org
+w3schools python
+Mosh Hamedani - YT
