@@ -1,0 +1,12 @@
+Üdvözöllek!
+Ez az oldal a hivatkozások alábbi módjait mutatja be:
+Abszolút hivatkozás (http:)
+Relatív hivatkozás (file:)
+Oldalon belüli hivatkozás (#)
+Levelezés (mailto:)
+Az oldal szerkezete pedig a következő elemekből áll:
+Fejléc
+Navigációs rész
+Fő tartalmi mondanivaló
+Lábléc
+Azt is láthatod ITT, hogy ez az oldal stílus nélkül hogyan néz ki

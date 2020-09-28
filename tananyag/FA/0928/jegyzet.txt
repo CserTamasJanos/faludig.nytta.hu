@@ -1,0 +1,84 @@
+mik kerülhetnek az <a href=""></a> tag href attribútumába?
+
+http:
+https:
+ftp:
+file:			<- ez az alapértelmezett
+mailto:
+javascript:
+
+...
+
+mailto:email@email.hu?subject=Ez a tárgy
+
+
+
+<div>
+	
+</div>
+	- itt használtunk id="" attríbútumot
+	- illetve class="" attribútumot is - osztályszintû, elõfordulhat, hogy többször is használom ugyanazt
+
+
+lista tagek:
+
+<ol>	 - számozott lista
+	<li>listaelem</li>
+</ol>
+
+
+
+<ul>	 - nem számozott lista
+	<li>listaelem</li>
+</ul>
+
+
+belsõ linkelés
+
+ugyanúgy <a> tag, csak a link #-el kezdõdik
+pl
+
+<a href="#mi">Mi a Lorem Ipsum?</a>
+
+
+HF, a linkek.html-ben minden h3-hoz vissza a tetejére link
+  , impresszum, kpacsolat linkek is
+  , ászf külön ablakba
+  , szabadon színezgetni a stíluslapon
+
+
+
+Lépések:
+	1. legyen meg a szerkezet
+	2. utána jöhet a stílus
+
+
+Stílus - CSS3
+
+	* külsõ -> külön fájl .css kiterjesztés
+	* belsõ -> <head> részben elhelyezve
+	* helyi -> adott tag-en belül
+
+	Szintaktika:
+		jelölõ { attribútum: érték(ek); }
+		jelölõ { attribútum: érték(ek);
+			 attribútum2: érték(ek);
+			 ...
+		       }
+		https://www.w3schools.com/css/css_syntax.asp
+			selector {property:value; property:value;}
+
+		jelölõk/selectorok:
+			tag - pl.: h1
+			osztályjel. - pl. div.kepek
+			azonosítójel. - pl. h3#mi
+		https://www.w3schools.com/css/css_selectors.asp
+
+		tag1, tag2, ... , osztályjel, ..., azon.jel. { ... }
+		nav a {} - csak a nav-on belüli a tag-ek
+
+	legalapabb attribútumok, amiket mindenre be lehet állítani
+	szöveg színe - color: white; (meg lehet adni szín nevével, hex és rgb-vel - meg máshogy is, csak nekünk ez a 3 kell)
+	háttér színe - background-color:
+	szöveg igazítása - text-align: left/right/center/justify (bal/jobb/közép/sorkizárt)
+

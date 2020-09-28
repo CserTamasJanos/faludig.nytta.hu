@@ -1,0 +1,37 @@
+body {
+    width: 80%;
+    background-color: lightgrey;
+}
+
+header, main {
+    background-color: white;
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.kepek {
+    text-align: center;
+}
+
+nav {
+    background-color: grey;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+footer {
+    background-color: black;
+}
+
+main a {
+    color: green;
+}
