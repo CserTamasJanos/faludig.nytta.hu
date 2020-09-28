@@ -1,0 +1,100 @@
+discord szerver - https://discord.gg/eGuPkND - maybe
+
+python alapok
+
+egy szerintem jó alapkurzus (ingyenes, de angol) - https://www.dataquest.io/course/python-for-data-science-fundamentals/
+
+komment/comment - #comment - kijelölt rész crtl+/
+
+print() - '' és "" közé is lehet írni a stringet, """ """ multiline string   
+	- \ feloldja a következõ karakter funkcióját
+		https://www.w3schools.com/python/gloss_python_escape_characters.asp
+	- argumentum end="", sep=" ", többi??
+
+
+kifejezés (expression) - 
+
+szerenténk eltárolni adatot -> változó
+változó (variable) - memóriarekeszre való hivatkozás
+
+variablename = value
+
+elemi adattípusok
+	string - karakterlánc
+	int - egész szám
+	float - tört/lebegõpontos szám
+	bool - logikai érték
+
+azért különböztetünk meg adattípusokat, mert különbözõ mûveleteket tudunk végezni velük
+
+string mûveletek - összeadás/összefûzés/konkatenáció: + , hatványozás (többszörös összefûzés): *
+egész szám mûveletek - +, -, *, /, hatványozás: **, osztás háromféleképpen, elsõ sztenderd /, // - egészrészt adja vissza, % - maradékot adja vissza
+
+
+variable = input(string) - üzenet a felhasználónak, és eltárolja a felhasználó válaszát (mindig stringként)
+
+típuskonvertálás - kasztoló fv-ek - kasztolás: típuskényszerítés - https://www.w3schools.com/python/gloss_python_type_conversion.asp
+	int() - => egész - csonkol, nem kerekít
+	float() - => valós
+	str() - => szöveg
+	bool() - => logikai
+
+string formázás
+	f"{expression}"
+
+(a string összetett adatszerkezet: karakterek listája) - indexelés []
+	variable[index]
+
+
+modul - name.py - egy py fájl egy modul
+
+import modulname
+
+	math modul (beépített matek fv-ek)
+
+egy string típusnak vannak saját függvényei
+
+
+
+Logikai kifejezések
+	Logikai mûveletek
+
+
+		not A | =		negáció
+		    0 | 1
+		    1 | 0
+		    
+		and A | B | =		konjunkció
+		    0 | 0 | 0
+		    0 | 1 | 0
+                    1 | 0 | 0
+		    1 | 1 | 1
+
+
+		or  A | B | =		alternáció (diszjunkció - kinek mi)
+		    0 | 0 | 0
+		    0 | 1 | 1
+                    1 | 0 | 1
+		    1 | 1 | 1
+
+Összehasonlító operandusok
+	<, >, <=, >= - szokásos értelmezés szerint
+	== - egyenlõ/megegyezik
+	!= - nem egyenlõ
+
+kifejezés - mint logikában :))) - https://hu.wikipedia.org/wiki/Form%C3%A1lis_nyelv - atomok kifejezések, változók kifejezése, atomokból plusz "operandusokból összerakott grammatikailag helyes az is, meg változók ugyanez
+
+Vezérlõszerkezetek
+	elágazás - if, elif, else
+		if/elif expression:
+			---
+		else:
+			---
+
+	ciklus - while, for
+		while expression:
+			---
+		for variable in sequence:		( range() fv hasznos - https://www.w3schools.com/python/ref_func_range.asp)
+			---				
+
+	
