@@ -155,6 +155,9 @@ ell = tize * 10000 + ote * 5000 + e * 1000
 
 print(f"\nA kiadott bankjegyek:\n\n {tize:2} * 10 000 = {tize*10000:6}\n {ote:2} *  5 000 = {ote*5000:6}\n {e:2} *  1 000 = {e*1000:6}\n{'_' * 21}\n\nÖsszeg:{ell:14} Ft")
 
+# Az itteni és későbbi formázás magyarázatához majd kerítek valami linket.
+# A lényeg, hogy a f"{valtozo:formatum}" kifejezésben a 'valtozo' egy változó, a ':' jelenti, hogy formázva lesz, a 'formatum' meg valamilyen formázó karaktersorozat.
+
 
 # 14. feladat (uzemido) - Szerintem itt az üzemidőt ...nap ...óra ...perc ...másodperc formában gondolta a költő, de az eredeti feladat megoldása az alábbi.
 
