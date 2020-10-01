@@ -231,9 +231,9 @@ else:
 
 # 20. feladat (elojel)
 
-szam = complex(input("Kérek egy számot: "))               # Egyébként az összes olyan feladatnál, ahol nincs megadva, hogy milyen számot várunk,
-                                                          # float() helyett a complex() fv-t is használhatnánk, mert a komplex számok bővebb halmaz.
-                                                          # Mondjuk a <, > reláció nincs a komplexeknél értelmezve, meg oszthatóságnál is lehet, hogy meghal a python. :D
+szam = float(input("Kérek egy számot: "))               # Egyébként az összes olyan feladatnál, ahol nincs megadva, hogy milyen számot várunk,
+                                                        # float() helyett a complex() fv-t is használhatnánk, mert a komplex számok bővebb halmaz.
+                                                        # Mondjuk a <, > reláció nincs a komplexeknél értelmezve, meg oszthatóságnál is lehet, hogy meghal a python. :D
 
 if szam < 0:
     print("A szám negatív.")
