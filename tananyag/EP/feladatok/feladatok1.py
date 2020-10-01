@@ -409,9 +409,7 @@ else:
 
 ev = int(input("Milyen évet írunk? "))
 
-if ev % 4 == 0 and ev % 100 != 0:
-    print("Az év szökőév.")
-elif ev % 400 == 0:
+if (ev % 4 == 0 and ev % 100 != 0) or ev % 400 == 0:
     print("Az év szökőév.")
 else:
     print("Az év nem szökőév.")
