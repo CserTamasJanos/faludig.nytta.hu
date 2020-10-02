@@ -155,8 +155,7 @@ ell = tize * 10000 + ote * 5000 + e * 1000
 
 print(f"\nA kiadott bankjegyek:\n\n {tize:2} * 10 000 = {tize*10000:6}\n {ote:2} *  5 000 = {ote*5000:6}\n {e:2} *  1 000 = {e*1000:6}\n{'_' * 21}\n\nÖsszeg:{ell:14} Ft")
 
-# Az itteni és későbbi formázás magyarázatához majd kerítek valami linket.
-# A lényeg, hogy a f"{valtozo:formatum}" kifejezésben a 'valtozo' egy változó, a ':' jelenti, hogy formázva lesz, a 'formatum' meg valamilyen formázó karaktersorozat.
+                                https://www.w3schools.com/python/python_string_formatting.asp
 
 
 # 14. feladat (uzemido) - Szerintem itt az üzemidőt ...nap ...óra ...perc ...másodperc formában gondolta a költő, de az eredeti feladat megoldása az alábbi.
@@ -413,3 +412,102 @@ if (ev % 4 == 0 and ev % 100 != 0) or ev % 400 == 0:
     print("Az év szökőév.")
 else:
     print("Az év nem szökőév.")
+
+
+
+# Véletlenszámok
+
+
+import random
+
+
+31. feladat (haromjegyu)
+
+rnd = random.randrange(100, 1000)
+
+print(rnd)
+
+
+# 32. feladat (veletlenszam1)
+
+regesz = random.randrange(1, 25)
+rtort = random.random() * 25
+
+print(regesz, rtort)
+
+
+# 33. feladat (veletlenszam2)
+
+regesz = random.randrange(15, 25)
+rtort = random.random() * 10 + 15
+
+print(regesz, rtort)
+
+
+# 34. feladat (veletlen_paros)
+
+rnd = random.randrange(0, 100, 2)
+
+print(rnd)
+
+
+# 35. feladat (veletlen_5)
+
+rnd = random.randrange(100, 201, 5)
+
+print(rnd)
+
+
+# 36. feladat (hanyjegyu)
+
+rnd = random.randrange(1, 999999)
+
+print(f"A(z) {rnd} szám {len(str(rnd))} jegyű")
+
+
+# 37. feladat (kockadobas)
+
+dobas1 = random.randrange(1, 7)
+dobas2 = random.randrange(1, 7)
+dobas3 = random.randrange(1, 7)
+dobas4 = random.randrange(1, 7)
+dobas5 = random.randrange(1, 7)
+dobas6 = random.randrange(1, 7)
+
+print("6 db kockadobás:", dobas1, dobas2, dobas3, dobas4, dobas5, dobas6)
+
+
+# 38. feladat (lotto)
+
+szam1 = random.randrange(1, 91)
+szam2 = random.randrange(1, 91)
+szam3 = random.randrange(1, 91)
+szam4 = random.randrange(1, 91)
+szam5 = random.randrange(1, 91)
+
+print("A lottószámok:", szam1, szam2, szam3, szam4, szam5)
+
+
+# 39. feladat (osszead)
+
+a = random.random() * 40 + 10
+b = random.random() * 40 + 10
+osszeg = a + b
+
+valasz = float(input(f"{a}+{b}=? "))
+
+if valasz == osszeg:
+    print("A válasz helyes.")
+else:
+    print("A válasz helytelen.")
+
+
+# 40. feladat (szamkitalalo)
+
+rnd = random.randrange(1, 100)
+felh = int(input("Gondoltam egy számra 0 és 100 között. Mennyi lehet? "))
+
+if rnd == felh:
+    print("nyert")
+else:
+    print("nem nyert")
