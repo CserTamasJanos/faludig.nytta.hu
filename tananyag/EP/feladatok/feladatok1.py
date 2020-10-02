@@ -155,7 +155,7 @@ ell = tize * 10000 + ote * 5000 + e * 1000
 
 print(f"\nA kiadott bankjegyek:\n\n {tize:2} * 10 000 = {tize*10000:6}\n {ote:2} *  5 000 = {ote*5000:6}\n {e:2} *  1 000 = {e*1000:6}\n{'_' * 21}\n\nÖsszeg:{ell:14} Ft")
 
-                                https://www.w3schools.com/python/python_string_formatting.asp
+                                #https://www.w3schools.com/python/python_string_formatting.asp
 
 
 # 14. feladat (uzemido) - Szerintem itt az üzemidőt ...nap ...óra ...perc ...másodperc formában gondolta a költő, de az eredeti feladat megoldása az alábbi.
@@ -421,7 +421,7 @@ else:
 import random
 
 
-31. feladat (haromjegyu)
+#31. feladat (haromjegyu)
 
 rnd = random.randrange(100, 1000)
 
