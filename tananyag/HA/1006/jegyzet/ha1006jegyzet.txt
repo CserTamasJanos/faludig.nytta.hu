@@ -1,0 +1,74 @@
+Netacad 2. fejezet
+
+Operációs Redszer
+	Shell - a szoftvereken keresztül már a felhasználó tudja vezérelni agépet
+		Kernel - op. rendszer mélyebb része, amely közvetlenül a hardware-t vezérli
+			Hardware
+^
+User interface
+	CLI - parancssoros felület
+	GUI - grafikus felület
+
+IOS 
+cisco hálózati eszközökben CF (Compact Flash) kártya, ezen lesz az oprendszer, maga a eszköz pedig a háttértár
+
+enable -> privilige
+		configure terminal -> global config
+exit - eggyel kijebb lép
+
+
+2.1.3.2
+	privilige módban mentjük a konfigurációt
+2.1.3.4
+2.1.3.5
+
+IOS help: '?'
+
+eszköz átnevezése: hostname 'név'
+
+switch-nek adunk ip címet
+	vlan-ra (virtuális lan)
+	- interface vlan 1
+		ip address 'ipcím' 'maszk'
+		bekapcsolni: no shutdown (sh)
+
+privilige-ben:
+	show running-config (memgutatja afutó konfigurációt)
+	copy running-config startup-config (felülírjuk a kezdeti konfigurációt a futó konfiggal)
+(vty - virtual teletype)
+	reload (újraindít)
+
+
+lejelszavazzuk a konzol kábelt
+	privilige-ben line consle 0
+		password jelszo
+		login - kéri a jelszót
+
+lejelszavazuk a privillge módot
+	ena -> conf t -> enable password Asda11
+
+2.2.3 - configolás? 
+
+titkosítás - password encription
+
+(HF-nek szólni, hogy ha telepítünk, mutassa meg, hogy hol állítunk ip-címet)
+
+
+
+2.3.2.2 (manuális IP
+DHCP? - 2.3.2.3
+	DHCP, mint szolgáltatást 2 eszköz tud nyújtani - szerver, router
+
+2 dolognak mindig fix IP kell: szerver, nyomtató
+
+DHCP beállítása szerveren
+	services -> DHCP
+		service on
+		start IP address
+		subnet mask
+		max number of users
+	save
+
+végpont
+	ip conf -> DHCP 
+		nem megfelelõ ip-t oszt ki, akkor baj van
