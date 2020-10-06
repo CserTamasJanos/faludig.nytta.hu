@@ -1,0 +1,71 @@
+lista deklarálása
+
+	listanev1 = []
+	listanev2 = ["szöveg1", "szöveg2"]
+	listanev3 = ["szöveg1", 5, 10.5, False]
+
+	indexelés
+
+	lista[index] - 'index'-edik eleme a listának (0-tól számolunk)
+	lista[index:ig] - 'index'-edik elemtõl 'ig'-1-ig
+	lista[-1] - utolsó elem
+	lista[5:-1] - 5-tõl utolsó elemig
+	lista[:asd] - 0-tól asd-ig - asszem
+	lista[asd:] - már nem emlékszem mi volt
+
+	lista metódusok
+
+		.append(value) - végére hozzáadja elemnek a 'value'-t
+		.remove(value) - ugyanaz csak elveszi (az elsõ elemet, amit megtalál
+		.instert
+		.sort
+		.copy
+	
+		https://www.w3schools.com/python/python_ref_list.asp
+
+
+szótár/dictionary adattípus
+
+	name = { "key1": value1,
+		 "key2": value2,
+		 "key3": value3
+	}
+
+
+tuple adattípus - readonly, vagyis csak olvasni tudjuk
+
+	name = (value1, value2, value3, value4)
+
+	(nem) mátrix - 2 dimenziós (tömb) lista
+		egy lista minden eleme egy lista
+	indexelése
+
+	name[index1][index2]
+
+
+random számok
+
+	import random
+
+	https://www.w3schools.com/python/module_random.asp
+
+
+
+programozási tételek - szerintem ezt a témakört érdemesebb lenne a függvények után venni, mert a pszeudokódok fv-eket írnak le
+
+	(info.nytta.hu/temak/prog/Programozasi_tetelek.pdf)
+	
+	sorozatszámítás (összegzés)
+		ha az itt szereplõ "mûvelet" "+", akkor összegzés a tétel neve,
+		egyébként bármilyen matematikai mûvelet lehet
+
+	eldöntés
+
+	kiválasztás
+	
+	keresés
+
+	megszámolás
+
+	maximumkiválasztás (vagy fordított rel esetén minimumkiválasztás)
+
