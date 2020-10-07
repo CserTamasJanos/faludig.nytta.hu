@@ -407,3 +407,98 @@ print(visszafele)
 nev = "Gábor"
 for i in range(len(nev)):
     print(f"{' ' * i}{nev[i]}")
+
+
+
+# Egymásba ágyazott ciklusok
+
+# 29. feladat (faktoriális) - az első 10 számot most 1-től 10-ig értelmezem, de ugyanúgy lehetne 0-tól, mint a 22. feladatban
+
+for i in range(1, 10 + 1):
+    faktor = 1
+    for j in range(1, i + 1):
+        faktor *= j
+    print(f"{i}! = {faktor}.")
+
+
+# 30. feladat (primek) - itt is feltételezem, hogy nemnegatív számokról beszélünk, mint a 16., 17., 18-as feladatokban
+
+for i in range(500):
+    osztok = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            osztok += 1
+    if osztok == 2:
+        print(i)
+
+
+# 31., 32., 33. feladatoknál segítség a formázáshoz: https://www.w3schools.com/python/ref_string_format.asp
+
+
+# 31. feladat (szamok)
+
+#a.
+for i in range(1, 10):
+    ki = ""
+    for j in range(i):
+        ki += f"{i:<5}"
+    print(ki)
+#                                   vagy egy ciklussal:
+for i in range(1, 10):
+    print(f"{i:<5}" * i)
+
+#b.
+for i in range(9, 0, -1):
+    ki = ""
+    for j in range(i):
+        ki += f"{i:>5}"
+    print(f"{ki:>45}")
+#                                   vagy egy ciklussal:
+for i in range(9, 0, -1):
+    print(f"{f'{i:>5}' * i:>45}")
+
+
+# 32. feladat (vakacio) - itt sem kerülhető el a string-ek list-ként hazsnálata
+
+szoveg = "VAKÁCIÓ"
+
+# a.
+for i in range(len(szoveg)):
+    ki = ""
+    for betu in szoveg[i:]:
+        ki += f"{betu:<4}"
+    print(ki)
+
+# b.
+for i in range(len(szoveg), -1, -1):
+    ki = ""
+    for betu in szoveg[i:]:
+        ki += f"{betu:>4}"
+    print(f"{ki:>28}")
+
+
+# 33. feladat (szorzotabla)
+
+for i in range(1, 11):
+    for j in range(1, 11):
+        print(f"{i * j:<4}", end="")
+    print()
+
+
+# 34. feladat - lemaradt a neve
+
+# i, j-t nem deklarálok előre, mert akkor while cikusokkal oldanám meg, és ez nem az a feladatsor
+# plusz ez ugye elv. C#-os feladatsor, ott sem a számlálos ciklus előtt deklarálom, hanem a ciklus "feltételében"
+
+for i in range(2, -1, -1):
+    for j in range(0, 3):
+        if i == j:
+            print(1)
+        else:
+            print(0)
+    print()
+
+
+# 35. feladat - szintén nincs neve
+
+# Válasz: c)
