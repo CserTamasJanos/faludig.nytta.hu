@@ -65,7 +65,7 @@ for i in range(n):
 # az indexelés elhagyható, ha csak balról jobbra mozgatom a nevemet
 
 
-import random # - 5. és 6. feladathoz
+import random # - 5., 6., 23., 24. és 26. feladathoz
 
 
 # az 5. és 6. feladatban használt furcsa karaktersorozatok magyarázata: 126. sortól a 139. sorig,
@@ -93,7 +93,7 @@ for i in range(200):
 print("\033[26;1H", end="") # "jó" (26. sor 1. oszlop) helyre állítom a kurzort
 
 
-# 6. feladat
+# 6. feladat (randomszin)
 
 # segítség a színezéshez:   https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters
 #                           https://en.wikipedia.org/wiki/ANSI_escape_code#CSI_sequences
@@ -137,3 +137,273 @@ print("\033[26;1H\033[0m", end="") # "jó" (26. sor 1. oszlop) helyre állítom 
 # az utolsó, záró karakter jelöli a konkrét kódtípust - H esetén pozícionálunk, m esetén színezünk.
 # a [ és záró karakter között a hivatkozott ANSI escape kódtípus argumentumait kell megadni (;-vel elválasztva, ha több van neki)
 # ellenőrző kérdés: a jelen fájl (feladatok2.py) 86. sorában, a print függvény argumentumában, mit jelent a J karakter? (és mit jelent a 2, mint a J kódtípus argumentuma?)
+
+
+# 7. feladat (negyzetszamok)
+
+for i in range(31):
+    print(i ** 2)
+
+
+# 8. feladat (2hatvanyok)
+
+for i in range(1, 31):
+    print(2 ** i)
+
+
+# 9. feladat (paratlan)
+
+for i in range(1, 100, 2):
+    print(i)
+
+#        2. megoldás - páratlan számok képletével:
+
+for i in range(1, 51):
+    print(2 * i - 1)
+
+#        3. megoldás - az előző, csak 0-tól indulva:
+
+for i in range(50):
+    print(2 * i + 1)
+
+
+# 10. feladat (paratlan2)
+
+for i in range(99, 0, -2):
+    print(i)
+
+#        az előző feladat 3. megoldásához hasonlóan:
+
+for i in range(50):
+    print(2 * (50 - i) - 1)
+
+
+# 11. feladat (szamtanisor1)
+
+for i in range(50):
+    print(10 + i * 7)
+
+#        így is lehet, csak akkor ki kell számolni az utolsó tagot:
+
+for i in range(10, 354, 7):
+    print(i)
+
+
+# 12. feladat (szamtanisor2)
+
+a_1 = float(input("Kérem a sorozat első tagját: "))
+d = float(input("Kérem a sorozat differenciáját: "))
+
+for i in range(20):
+    print(a_1 + i * d)
+
+
+# 13. feladat (szamtanisor3)
+
+a_k1 = float(input("Kérem a két szomszéd közül az elsőt: "))
+a_k2 = float(input("Kérem a két szomzéd közül a másodikat: "))
+
+d = a_k2 - a_k1
+
+print("A sorozat előző 10 tagja:")
+for i in range(1, 11):
+    print(a_k1 - (11 - i) * d)          # azért (11 - i)-vel és nem csak simán i-vel szorzom a d-t, hogy ne visszafelé írja ki a sorozat tagjait
+
+print("\nA sorozat következő 10 tagja: ")
+for i in range (1, 11):
+    print(a_k2 + i * d)
+
+
+# 14. feladat (homerseklet_atvaltas)
+
+for i in range(-30, 31):
+    print(f"{i}°C = {1.8 * i + 32}°F.")
+
+
+# 15. feladat (ketjegyu3)
+
+for i in range(-99, 100, 3):
+    if not (-10 < i < 10):
+        print(i)
+
+#                    vagy:
+
+for i in range(-99, 100):
+    if not (-10 < i < 10) and (i % 3 == 0):
+        print(i)
+
+
+# 16. feladat (osztok) - ugyan a feladat szövegében nincs benne, de feltételezem, hogy egész számot várunk, illetve, hogy nem negatív - 17. 18. feladatoknál is
+
+szam = int(input("Kérek egy nemnegatív egész számot: "))
+
+print("A szám osztói: ")
+if szam != 0:
+    for i in range(1, szam+1):
+        if szam % i == 0:
+            print(i)
+else:
+    print("A 0-nak minden szám osztója.")
+
+
+# 17. feladat (prim_teszt)
+
+szam = int(input("Kérek egy nemnegatív egész számot: "))
+
+osztok = 0
+voszto = 2
+for i in range(1, szam + 1):
+    if szam % i == 0:
+        osztok += 1
+        if osztok == 2:
+            voszto = i
+
+if osztok > 2 or szam == 0:
+    print(f"A(z) {szam} nem prím. Valódi osztója pl.: {voszto}.")
+elif szam == 1:
+    print("Az 1 nem prím, de nem is összetett szám - így nincs valódi osztója.")
+else:
+    print(f"A(z) {szam} prím.")
+    
+
+# 18. feladat (lnko)
+
+szam1 = int(input("Kérek egy nemnegatív egész számot: "))
+szam2 = int(input("Kérek egy másik nemnegatív egész számot: "))
+
+lnko = 1
+
+if szam1 == 0:
+    print(f"{szam1} és {szam2} legnagyobb közös osztója: {szam2}.")
+elif szam2 == 0 or szam1 == szam2:
+    print(f"{szam1} és {szam2} legnagyobb közös osztója: {szam1}.")
+else:
+    for i in range(1, szam1 + 1):                                   # euklideszi algoritmussal sokkal hatékonyabb, de az rekurzív és rekurziót (meg fv-eket) nem tanultunk
+        if szam1 % i == 0 == szam2 % i:                             # tökmindegy, hogy melyik számot adom a range-nek, az lnko nem lehet nagyobb a kisebb számnál,
+            lnko = i                                                # szóval, ha a nagyobbat adtam, mégtöbb felesleges lépés lesz, de a lényeg, hogy így is úgy is működik
+    print(f"{szam1} és {szam2} legnagyobb közös osztója: {lnko}.")
+
+
+# 19. feladat (szim3hegyu)
+
+for i in range(100, 1000):
+    if i % 10 == ((i - i % 100) / 100):                    # lehetne string-ként összehasonlítani az első és utolsó karaktert, de ugye a listákat itt elvileg még nem vettük
+        print(i, i * -1)
+
+
+# 20. feladat (fibonacci)     # itt is egy rekurzív fv-en elegánsabb a dolog, csak még nem tanultuk
+
+a_n_1 = 1                     # a_n_1 az a_n előtti
+a_n_2 = 1                     # a_n_2 az a_n_1 előtti elem, csak változónévben nem lehet '-' karakter
+
+print(a_n_1)
+print(a_n_2)
+
+for i in range(8):
+    a_n = a_n_1 + a_n_2
+    print(a_n)
+
+    a_n_2 = a_n_1
+    a_n_1 = a_n
+
+
+# 21. feladat (amstrong)
+
+for i in range(100, 1000):                                    # az amstrong számok definíció szerint csak nemnegatív, egész számok lehetnek
+    elsojegy = (i - i % 100) / 100
+    masodikjegy = (i % 100 - i % 10) / 10
+    harmadikjegy = i % 10
+    osszeg = elsojegy ** 3 + masodikjegy ** 3 + harmadikjegy ** 3
+
+    if i == osszeg:
+        print(i)
+
+
+# 22. feladat (faktor)
+
+szam = int(input("Kérek egy nemnegatív egész számot: "))        # feltételezem, hogy csak nemnegatív, egész számokra értelmezzük a faktoriálist
+
+faktor = 1
+for i in range(1, szam + 1):
+    faktor *= i
+
+print(faktor)
+
+
+# 23. feladat (6dobas)
+
+db = 0
+
+for i in range(100):
+    dobas = random.randint(1, 6)
+    print(dobas)
+    if dobas == 6:
+        db += 1
+
+print(f"\n{db} db 6-os dobás volt.")
+
+
+# 24. feladat (dobasosszeg10)
+
+db = 0
+
+for i in range(20):
+    dobas1 = random.randint(1, 6)
+    dobas2 = random.randint(1, 6)
+#                                        nem kéri a feladat (az előző sem), hogy írjuk ki a dobásokat
+    if dobas1 + dobas2 == 12:
+        db += 1
+
+print(f"\n{db} db dupla 6-os dobás volt.")
+
+
+# 25. feladat (sorosszeg)
+
+sum = 0
+
+for i in range(1, 101):                     # feltételezem, hogy 1-től vesszük a természetes számokat
+    sum += i
+
+print(sum)
+#                ciklus nélkül (n = 0-ra is jó):
+n = 100
+sum = int((n * (n + 1)) / 2)
+print(sum)
+
+
+# 26. feladat (dobasosszeg)
+
+sum = 0
+
+for i in range(100):                          # itt sem írom ki a konkrét dobásokat,
+    sum += random.randint(1, 6)               # és direkt nem deklaráltam új - dobas nevű - változót, mert szerintem ez még olvasható/érthető
+                                              # (aztán lehet, hogy https://www.python.org/dev/peps/pep-0008/ vagy a Clean Code szerint kellene)
+print(sum)
+
+
+# 27. feladat (szoveg_forditva)
+
+szoveg = input("Kérek egy szöveget: ")
+                                                # nincs ilyen string method -> nem lehet megúszni, hogy listaként tekintsek a stringre - hiába "itt nem vettük még"
+print(szoveg[::-1])                             # https://www.w3schools.com/python/python_howto_reverse_string.asp
+
+#                        2. megoldás, mert mégiscsak a for ciklusok feladatcsoportban vagyunk
+visszafele = ""
+for i in range(1, len(szoveg) + 1):
+    visszafele += szoveg[-i]
+
+print(visszafele)
+
+#                        3. megoldás, mert mégiscsak :D
+visszafele = ""
+for i in range(len(szoveg)):
+    visszafele = szoveg[i] + visszafele
+
+print(visszafele)
+
+
+# 28. feladat (nev_atlosan) - itt sem lehet megúszni, hogy tudjuk, hogy a string egy karakterlista
+
+nev = "Gábor"
+for i in range(len(nev)):
+    print(f"{' ' * i}{nev[i]}")
