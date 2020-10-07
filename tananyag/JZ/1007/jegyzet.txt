@@ -1,0 +1,9 @@
+extensions:
+	HTML CSS Support
+	open in browser
+
+érdemes a projekt mappát ésszerûen struktúrálni
+	pl.: IMGS - képek
+	     TMP  - egyéb
+
+web ref-nek javasolt a Mozilla Development Network

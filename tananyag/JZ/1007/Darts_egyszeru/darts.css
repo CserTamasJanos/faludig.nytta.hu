@@ -1,0 +1,11 @@
+body, a {
+    color: #CC0000;
+}
+
+.back {
+    background: #E7D9B6;
+}
+
+header, nav, footer, h1, .kep{
+    text-align: center;
+}
