@@ -79,7 +79,7 @@ import random # - 5., 6., 23., 24. és 26. feladathoz
 # VSCode-ban működik, csak valami nem stimmel
 # cmd-ből indítva valami gond van a charset-tel
 # Windows PowerShell-ből indítva rendesen működik.
-# az előző 4 sor igaz a 6. feladatra is.
+# az előző 5 sor igaz a 6. feladatra is.
 
 # segítség a pozícionáláshoz: https://en.wikipedia.org/wiki/ANSI_escape_code#CSI_sequences
 
