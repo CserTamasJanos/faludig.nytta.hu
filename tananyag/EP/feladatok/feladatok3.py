@@ -227,8 +227,11 @@ if not van:
 nev = ["Károly", "Gergely", "Réka", "Angéla", "Lóránt", "Judit", "István", "Gábor", "Katalin", "Anna"]
 ido = [random.randint(0, 9) for i in range(10)]
 
+# a.
 atlag = sum(ido) / 10
+# b.
 kettonel_tobb = sum(i > 2 for i in ido)
+# c.
 van = bool(sum(i == 0 for i in ido) > 0)
 
 print(f"Átlagosan {atlag} órát interneteznek a diákok.\n{kettonel_tobb} diák internetezik 2 óránál többet.")
