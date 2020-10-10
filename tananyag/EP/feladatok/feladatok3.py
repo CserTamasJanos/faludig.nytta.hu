@@ -225,14 +225,14 @@ if not van:
 # 10. feladat - egyjegyű számokról van szó, ezért megint .randint()-et használok
 
 nev = ["Károly", "Gergely", "Réka", "Angéla", "Lóránt", "Judit", "István", "Gábor", "Katalin", "Anna"]
-ido = [random.randint(0, 9) for i in range(10)]
+ido = [random.randint(0, 9) for i in range(10)]             # lustaaaaa
 
 # a.
 atlag = sum(ido) / 10
 # b.
-kettonel_tobb = sum(i > 2 for i in ido)
+kettonel_tobb = sum(i > 2 for i in ido)                     # lustaaaaa
 # c.
-van = bool(sum(i == 0 for i in ido) > 0)
+van = bool(sum(i == 0 for i in ido) > 0)                    # lustaaaaa
 
 print(f"Átlagosan {atlag} órát interneteznek a diákok.\n{kettonel_tobb} diák internetezik 2 óránál többet.")
 if van:
@@ -244,7 +244,7 @@ else:
 # 11. feladat - nincs megadva, hogy 'i' most az index, vagy az adott elem sorszáma, én indexnek veszem, de amúgy tökmindegy.
 #             - egy fokkal érdekesebb a feladat (meg a fenti sor is), ha 6 helyett valamilyen páratlan számmal osztva nézzük a maradékot.
 
-szamok = [i * (i % 6) for i in range(40)]
+szamok = [i * (i % 6) for i in range(40)]               # lustaaaaa
 # paros = sum(szam % 2 == 0 for szam in szamok) - a kövi ciklus is ugyanazokkal, ugyanazokon iterál végig, a lépésszám miatt inkább ott számolom meg, és inkább a páratlanokat, hogy if se kelljen.
 
 paratlan = 0
@@ -270,7 +270,7 @@ else:
 #               (   vagy fel kell sorolni a négyzetszámokat n-ig:   megoldas = [i ** 2 for i in range(int(math.sqrt(n)))]    )
 #               ha 0 matek hátterünk van, akkor modellezve a történetet, az algoritmus:
 
-cellak = [False for i in range(100)]
+cellak = [False for i in range(100)]                # lustaaaaa
 
 for i in range(1, 101):
     for j in range(100):
