@@ -186,7 +186,7 @@ print(f"A találatok száma: {talalat}")
 # 8. feladat - eggyel általánosabban oldom meg, egyszerűen állítható a 'napok' változóval, hogy hány napot nézzünk
 
 napok = 12
-utalasok = [int(input(f"A(z) {i}. napi átutalások szám: ")) for i in range(1, napok + 1)]                       # igen, lusta vagyok, sry... :D
+utalasok = [int(input(f"A(z) {i}. napi átutalások száma: ")) for i in range(1, napok + 1)]                       # igen, lusta vagyok, sry... :D
 atlag = sum(utalasok) / napok
 tobb_mint_atlag = sum(utalas > atlag for utalas in utalasok)                                                    # igen, lusta... :D
 print(f"Az átutalások napi átlaga: {atlag:.2f}. Az átlagnál forgalmasabb napok száma {tobb_mint_atlag}.")
