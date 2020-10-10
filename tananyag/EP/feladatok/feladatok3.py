@@ -62,7 +62,7 @@ import random # 2., 3., 5., 6., 7., 10. feladathoz
 
 # 2. feladat - a 0-ra végződők számának meghatározása miatt .random() helyett .randint()-et fogok használni, de igazából mindegy
 
-# szamok = [random.randint(51, 149) for i in range(20)] # python-ban így is meg lehet adni egy listát: nev = [ertek/kifejezes for elem in sorozat] - ugyanaz, mint a 66-70-ig sorok
+# szamok = [random.randint(51, 149) for i in range(20)] # python-ban így is meg lehet adni egy listát: nev = [ertek/kifejezes for elem in sorozat] - ugyanaz, mint a 67-70-ig sorok
 
 szamok = []
 for i in range(20):
@@ -76,7 +76,7 @@ for szam in szamok:
 osszeg = sum(szamok)
 atlag = osszeg / 20
 
-# vnulldb = sum(szam % 10 == 0 for szam in szamok) - nem csak listákat lehet így megadni... - nev = fuggveny(ertek/kifejezes for elem in sorozat) - ugyanaz, mint a 21-84-ig sorok
+# vnulldb = sum(szam % 10 == 0 for szam in szamok) - nem csak listákat lehet így megadni... - nev = fuggveny(ertek/kifejezes for elem in sorozat) - ugyanaz, mint a 81-84-ig sorok
 
 vnulldb = 0
 for szam in szamok:
