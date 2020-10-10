@@ -33,7 +33,7 @@ print(f"Az átlagmagasság {atlag2} cm.")
 nevek.sort()
 print(nevek)
 
-# a d. feladat csak a nevek[] rendezését kérte, a magasságokét nem. ha szeretnéd, hogy jó legyen az e. feladat, kommenteld ki a 31. sort.
+# a d. feladat csak a nevek[] rendezését kérte, a magasságokét nem. ha szeretnéd, hogy jó legyen az e. feladat, kommenteld ki a 33. sort.
 
 # e.
 max_ertek = max(magassagok)
@@ -62,7 +62,7 @@ import random # 2., 3., 5., 6., 7., 10. feladathoz
 
 # 2. feladat - a 0-ra végződők számának meghatározása miatt .random() helyett .randint()-et fogok használni, de igazából mindegy
 
-# szamok = [random.randint(51, 149) for i in range(20)] # python-ban így is meg lehet adni egy listát: nev = [ertek/kifejezes for elem in sorozat] - ugyanaz, mint a 65-68-ig sorok
+# szamok = [random.randint(51, 149) for i in range(20)] # python-ban így is meg lehet adni egy listát: nev = [ertek/kifejezes for elem in sorozat] - ugyanaz, mint a 66-70-ig sorok
 
 szamok = []
 for i in range(20):
@@ -76,7 +76,7 @@ for szam in szamok:
 osszeg = sum(szamok)
 atlag = osszeg / 20
 
-# vnulldb = sum(szam % 10 == 0 for szam in szamok) - nem csak listákat lehet így megadni... - nev = fuggveny(ertek/kifejezes for elem in sorozat) - ugyanaz, mint a 79-82-ig sorok
+# vnulldb = sum(szam % 10 == 0 for szam in szamok) - nem csak listákat lehet így megadni... - nev = fuggveny(ertek/kifejezes for elem in sorozat) - ugyanaz, mint a 21-84-ig sorok
 
 vnulldb = 0
 for szam in szamok:
@@ -85,7 +85,7 @@ for szam in szamok:
 
 print(f"A számok összege: {osszeg}; átlaga: {atlag}; 0-ra végződők száma: {vnulldb}")
 
-# összevetve a 63. és 77. sorokat, egysoros megoldás, ha csak a 0-ra végződők megszámolása a feladat:
+# összevetve a 65. és 79. sorokat, egysoros megoldás, ha csak a 0-ra végződők megszámolása a feladat:
 # osszeg = sum(szam % 10 == 0 for szam in [random.randint(51, 149) for i in range(20)])
 
 
@@ -180,7 +180,7 @@ huzas.sort()
 for szam in huzas:
     print(szam)
 
-talalat = sum(tipp in huzas for tipp in tippek)                     # kezdek ellustulni, de remélem a korábbi egysorosok után ez már érthető, ahogy a 159. sor is.
+talalat = sum(tipp in huzas for tipp in tippek)                     # kezdek ellustulni, de remélem a korábbi egysorosok után ez már érthető, ahogy a 162. sor is.
 print(f"A találatok száma: {talalat}")
 
 
