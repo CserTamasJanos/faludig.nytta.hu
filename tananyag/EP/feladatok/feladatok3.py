@@ -131,6 +131,7 @@ szerepel = False
 
 for i in range(50):                                 
     rnd = random.randrange(11, 100, 2)
+    szamok.append(rnd)
     if rnd == 13:
         szerepel = True
 
