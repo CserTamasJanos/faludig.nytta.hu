@@ -1,5 +1,7 @@
 # Tömbök
 
+# ez hasznos lesz: https://www.w3schools.com/python/python_ref_list.asp
+
 # 1. feladat
 
 nevek = ["Laci", "Peti", "Kitti", "Gabi", "Erik"]
@@ -55,10 +57,10 @@ print(nevek)
 print(magassagok)
 
 
-import random # 2., 3., 5., 6., 7. feladathoz
+import random # 2., 3., 5., 6., 7., 10. feladathoz
 
 
-# 2. feladat - a 0-ra végződők számának meghatározása miatt random() helyett randint()-et fogok használni, de igazából mindegy
+# 2. feladat - a 0-ra végződők számának meghatározása miatt .random() helyett .randint()-et fogok használni, de igazából mindegy
 
 # szamok = [random.randint(51, 149) for i in range(20)] # python-ban így is meg lehet adni egy listát: nev = [ertek/kifejezes for elem in sorozat] - ugyanaz, mint a 65-68-ig sorok
 
@@ -188,3 +190,91 @@ utalasok = [int(input(f"A(z) {i}. napi átutalások szám: ")) for i in range(1,
 atlag = sum(utalasok) / napok
 tobb_mint_atlag = sum(utalas > atlag for utalas in utalasok)                                                    # igen, lusta... :D
 print(f"Az átutalások napi átlaga: {atlag:.2f}. Az átlagnál forgalmasabb napok száma {tobb_mint_atlag}.")
+
+
+# 9. feladat - megint azért for, mert a while a kövi feladatsorhoz tartozik
+
+rendszamok = []
+sebessegek = []
+
+ures = False
+
+for i in range(1, 11):
+    if not ures:
+        rendszam = input(f"A(z) {i}. jármű rendszáma: ")
+        if rendszam == "":
+            ures = True
+        else:
+            sebesseg = float(input("A jármű sebessége (km/h): "))
+
+            rendszamok.append(rendszam)
+            sebessegek.append(sebesseg)
+
+van = False
+for i in range(len(rendszamok)):
+    if sebessegek[i] > 90:
+        if not van:
+            print("A gyorshajtók adatai: ")
+            van = True
+        print(f"Rendszám: {rendszamok[i]}; Sebesség: {sebessegek[i]}")
+
+if not van:
+    print("Nem volt gyorshajtó.")
+
+
+# 10. feladat - egyjegyű számokról van szó, ezért megint .randint()-et használok
+
+nev = ["Károly", "Gergely", "Réka", "Angéla", "Lóránt", "Judit", "István", "Gábor", "Katalin", "Anna"]
+ido = [random.randint(0, 9) for i in range(10)]
+
+atlag = sum(ido) / 10
+kettonel_tobb = sum(i > 2 for i in ido)
+van = bool(sum(i == 0 for i in ido) > 0)
+
+print(f"Átlagosan {atlag} órát interneteznek a diákok.\n{kettonel_tobb} diák internetezik 2 óránál többet.")
+if van:
+    print("Van olyan diák, aki egy órát sem internetezik.")
+else:
+    print("Nincs olyan diák, aki egy órát sem internetezik.")
+
+
+# 11. feladat - nincs megadva, hogy 'i' most az index, vagy az adott elem sorszáma, én indexnek veszem, de amúgy tökmindegy.
+#             - egy fokkal érdekesebb a feladat (meg a fenti sor is), ha 6 helyett valamilyen páratlan számmal osztva nézzük a maradékot.
+
+szamok = [i * (i % 6) for i in range(40)]
+# paros = sum(szam % 2 == 0 for szam in szamok) - a kövi ciklus is ugyanazokkal, ugyanazokon iterál végig, a lépésszám miatt inkább ott számolom meg, és inkább a páratlanokat, hogy if se kelljen.
+
+paratlan = 0
+for szam in szamok:
+    print(szam)
+    paratlan += szam % 2
+
+if paratlan == 20:
+    print("Ugyanannyi páros és páratlan szám van.")
+elif paratlan > 20:
+    print("A páratlan számokból van több.")
+else:
+    print("A páros számokból van több.")
+
+
+# 12. feladat - ha gyors algoritmust szeretnénk, ez egy tökalap, elemi számelméleti (+kombinatorikai) feladat.
+#               kell hozzá ismerni a számelmélet alaptételét,
+#               kell hozzá tudni leszámolni hogy hány elemű az A := {0, 1, ..., n1} x {0, 1, ..., n2} x ... x {0, 1, ..., nk} halmaz
+#               kell hozzá tudni, hogy ha egy szorzat páratlan, akkor minden tényezőjének páratlannak kell lennie
+#               kell hozzá tudni a hatványozás azonosságaiból az (a^2)*(b^2) = (a*b)^2 többtényezős szorzatra és tetszőleges páros hatványra való általánosítását
+#               ha mindez megvan, a végén kijön, hogy ha n db cella ajtaját nyitjuk-zárjuk, akkor a történet végén nyitott cellák sorszámai a négyzetszámok 1-től n-ig.
+#               az előző sori megoldással csak fel kell sorolni a négyzetszámokat 100-ig: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+#               (   vagy fel kell sorolni a négyzetszámokat n-ig:   megoldas = [i ** 2 for i in range(int(math.sqrt(n)))]    )
+#               ha 0 matek hátterünk van, akkor modellezve a történetet, az algoritmus:
+
+cellak = [False for i in range(100)]
+
+for i in range(1, 101):
+    for j in range(100):
+        if (j + 1) % i == 0:
+            cellak[j] = not cellak[j]
+
+print("A nyitott cellák sorszámai: ")
+for i in range(1, 101):
+    if cellak[i - 1]:
+        print(i)

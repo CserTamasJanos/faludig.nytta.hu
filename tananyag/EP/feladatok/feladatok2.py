@@ -129,7 +129,7 @@ print("\033[26;1H\033[0m", end="") # "jó" (26. sor 1. oszlop) helyre állítom 
 # a kurzor pozícióját a '\033[ y ; x H' karakterosorozattal (idézöjelek és space-ek nélkül) lehet megadni,
 # ahol y a balfelső saroktól - (1,1) pont - mért függőleges, x a balfelső saroktól mért vízszintes koordináta
 
-# a szöveg színét a '\033[ c m' k karakterosorozattal (idézöjelek és space-ek nélkül) lehet megadni,
+# a szöveg színét a '\033[ c m' karakterosorozattal (idézöjelek és space-ek nélkül) lehet megadni,
 # ahol c a kívánt szín színkódja - a színkódok itt találhatóak: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
 # a pozíciónál és a színezésnél is, a \ utáni 033 szám jelenti, hogy most ANSI escape kód következik,
