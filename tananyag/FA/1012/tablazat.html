@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table,
+        td {
+            border: 1px black solid;
+            background-color: grey;
+        }
+
+        table {
+            padding: 10px;
+        }
+
+        td {
+            padding: 15px;
+            background-color: white;
+        }
+
+        .piros,
+        .piros td {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teljes táblázat színezve</h1>
+    <table>
+        <tr>
+            <td>1s 1c</td>
+            <td>1s 2c</td>
+            <td>1s 3c</td>
+        </tr>
+        <tr>
+            <td>2s 1c</td>
+            <td>2s 2c</td>
+            <td>2s 3c</td>
+        </tr>
+        <tr>
+            <td>3s 1c</td>
+            <td>3s 2c</td>
+            <td>3s 3c</td>
+        </tr>
+    </table>
+    <h1>Összevonás vízszintesen</h1>
+    <table>
+        <tr>
+            <td>1s 1c</td>
+            <td colspan="2">1s 2c</td>
+        </tr>
+        <tr>
+            <td>2s 1c</td>
+            <td>2s 2c</td>
+            <td>2s 3c</td>
+        </tr>
+        <tr>
+            <td>3s 1c</td>
+            <td>3s 2c</td>
+            <td>3s 3c</td>
+        </tr>
+    </table>
+    <h1>Összevonás vízszintesen és függőlegesen</h1>
+    <table>
+        <tr>
+            <td>1s 1c</td>
+            <td colspan="2">1s 2c</td>
+        </tr>
+        <tr>
+            <td rowspan="3">2s 1c</td>
+            <td>2s 2c</td>
+            <td>2s 3c</td>
+        </tr>
+        <tr>
+            <td>3s 2c</td>
+            <td>3s 3c</td>
+        </tr>
+        <tr>
+            <td>4s 2c</td>
+            <td>4s 3c</td>
+        </tr>
+    </table>
+</body>
+
+</html>

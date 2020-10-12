@@ -1,0 +1,11 @@
+Doboz-modell
+	kép.png
+	projekt - brazilía a minta szerint
+Táblázat
+	tablazat.png
+
+CSS lényeg példa:
+	csszengarden.com
+
+Gomb
+	display attribute inline, block

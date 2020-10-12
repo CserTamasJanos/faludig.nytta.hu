@@ -1,0 +1,48 @@
+﻿Darts feladat
+-------------
+-------------
+
+Az implementáció drótváz alapján készüljön el, a drótváz a minták alapján.
+
+Elkészítendő fájlok: 
+	index.html, 
+	tortenet.html, 
+	jatekok.html, 
+	eszkozok.html,
+	darts.css
+
+Tartalmi elemek
+---------------
+	
+Fejléc
+	"DARTS" szöveg
+	baldart.jpg
+	jobbdart.jpg
+
+Menüsor
+	Alul és felül egy-egy vonal
+	DARTS -> index.html
+	Története -> tortenet.html
+	Játékok -> jatekok.html
+	Versenyszabályzat -> versenyszab.pdf - új oldalon nyíljon meg
+	Eszközök -> eszkozok.html
+
+Szöveges rész
+	Szöveg, kép a minták és források szerinti tartalommal és tagolással
+	Címek: 1-es, 2-es, 3-as szintű címsor
+	Felsorolás: számozatlan
+	dart.jpg -> dart_nyil.jpg - új oldalon nyíljon meg
+Lábléc
+	Alul és felül egy-egy vonal
+	Forrás: Magyar Darts Szövetség honlapja  -> darts.hu - új oldalon nyíljon meg
+
+Külső stílus elemek 
+-------------------
+
+Oldal háttere: #999966
+Menüsor és lábléc háttere: #E7D9B6
+Szöveg és linkek színe: #CC0000
+Címsorok árnyékoltak
+Befogadó doboz lekerekített és árnyékolt
+Minden egyéb a minta szerint
+
