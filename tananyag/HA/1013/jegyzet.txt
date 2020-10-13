@@ -1,0 +1,13 @@
+netacad:
+3. és 4. fejezet
+
+line console 0
+line vty 0 15
+interface range fa0/3-24, g0/2
+
+weboldal
+	DNS service on
+		name: ww.akarmi.hu
+		type: Arecord
+		address: ipcím v tartomány
+		ADD!
