@@ -1,5 +1,5 @@
 Doboz-modell
-	kép.png
+	doboz_modell.png
 	projekt - brazilía a minta szerint
 Táblázat
 	tablazat.png
@@ -8,4 +8,4 @@ CSS lényeg példa:
 	csszengarden.com
 
 Gomb
-	display attribute inline, block
+	display attribute inline, block, inline-block

@@ -1,5 +1,6 @@
 body {
     font-family: Verdana;
+    background-image: url("/tananyag/FA/1012/Brazilia_kieg/back.png");
 }
 
 a {
@@ -17,4 +18,12 @@ div.kep {
 
 div.gomb {
     text-align: end;
+}
+
+div.egesz {
+    width: 600px;
+    padding: 30px;
+    border: none;
+    margin: auto;
+    background-color: white;
 }
