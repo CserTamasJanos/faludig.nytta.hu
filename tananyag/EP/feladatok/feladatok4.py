@@ -4,6 +4,8 @@
 
 # 1. feladat
 
+import time     # 23., 24. feladathoz
+import random   # 18., 19., prog. tételek: 1., 2., 3., 4. feladathoz
 print(" ".join("Gábor"))
 
 
@@ -43,8 +45,10 @@ print(szoveg.count('e'))
 # 7. feladat    -   csak a nemüres 'szavakat' (karakterláncokat) számolom. egyébként len(szoveg.split())
 
 szoveg = input("Kérek egy szöveget: ")
-szodb = sum(szo != "" for szo in szoveg.strip().split())    # igen, itt már teljesen elveszett a motivációm az olvashatóságot illetően, mert valszeg senki nem olvassa a kódom :'( :D :D
-print(szodb)                                                # ha mégis olvasod és esetleg nem értenéd a 46. sort, de szeretnéd: dobj egy '3/7'-et discordon - vagy valami
+# igen, itt már teljesen elveszett a motivációm az olvashatóságot illetően, mert valszeg senki nem olvassa a kódom :'( :D :D
+szodb = sum(szo != "" for szo in szoveg.strip().split())
+# ha mégis olvasod és esetleg nem értenéd a 46. sort, de szeretnéd: dobj egy '3/7'-et discordon - vagy valami
+print(szodb)
 
 
 # 8. feladat    -   a mondat '!' esetén felkiáltó vagy óhajtó is lehet, illetve '...' esetén is kijelentő lesz az output
@@ -70,7 +74,8 @@ print(szoveg.lower())
 # 10. feladat
 
 szo = input("Kérek egy szót: ")
-szo = szo.capitalize()          # azért írom felül a 'szo' változót, mert azt kéri a feladat, hogy 'cseréljük le' - a print nem is kéne
+# azért írom felül a 'szo' változót, mert azt kéri a feladat, hogy 'cseréljük le' - a print nem is kéne
+szo = szo.capitalize()
 print(szo)
 
 
@@ -95,15 +100,18 @@ else:
 # 13. feladat
 
 szo = input("Kérek egy szót: ")
-db = sum(szo.count(maganhangzo) for maganhangzo in "aáeéiíoóöőuúüű")        # ha nem érted de szeretnéd: discord -> '3/13' (mint 47. sor komment)
+# ha nem érted de szeretnéd: discord -> '3/13' (mint 47. sor komment)
+db = sum(szo.count(maganhangzo) for maganhangzo in "aáeéiíoóöőuúüű")
 print(db)
 
 
 # 14. feladat
 
 szo = input("Kérek egy szót: ")
-fordit = str.maketrans("áéíóöőúüű", "aeiooouuu")                    # ezt az str.maketrans()-t úgy kell elképzelni, mintha bent lenne előtte egy 'import str' sor
-print(szo.translate(fordit))                                        # így az str modul maketrans() metódusa ugyanúgy hívható, mint amikor pl.: math.sqrt()-t hívunk
+# ezt az str.maketrans()-t úgy kell elképzelni, mintha bent lenne előtte egy 'import str' sor
+fordit = str.maketrans("áéíóöőúüű", "aeiooouuu")
+# így az str modul maketrans() metódusa ugyanúgy hívható, mint amikor pl.: math.sqrt()-t hívunk
+print(szo.translate(fordit))
 #                                                                     annyi csak a könnyebbség, hogy a string metódusokhoz nem kell külön importálni az str modult
 
 
@@ -132,9 +140,6 @@ if szo == szo[::-1]:
     print("A szó anagramma.")
 else:
     print("A szó nem anagramma.")
-
-
-import random   # 18., 19., prog. tételek: 1., 2., 3., 4. feladathoz
 
 
 # 18. feladat
@@ -170,7 +175,8 @@ print(f"Az irányítószám a(z) {int(irszam[1:3])}. kerülethez tartozik.")
 # 21. feladat   -   előfordulhat, hogy több j/ly is szerepel egy szóban, ezt az esetet most nem vizsgálom.
 #                   indok: az '...adja meg, hogy j vagy ly a helyes...'-ben a 'vagy' szót kizáróként értelmezem :P
 
-szavak = ["ajtó", "hajó", "gólya", "pólya", "papagáj", "lyuk", "hely", "rajz", "jól", "helyes"]
+szavak = ["ajtó", "hajó", "gólya", "pólya", "papagáj",
+          "lyuk", "hely", "rajz", "jól", "helyes"]
 pontok = 0
 for szo in szavak:
     kerdes = szo.replace('j', '_').replace('ly', '_')
@@ -193,9 +199,6 @@ for char in szoveg:
     if char not in karakterek:
         karakterek.append(char)
 print(f"A szövegben {len(karakterek)} db különböző karakter van.")
-
-
-import time     # 23., 24. feladathoz
 
 
 # 23. feladat   -   Windows Terminal-ból indítva jól működik, simán cmd-ben, PowerShell-ben nem. 24-es ugyanígy
@@ -232,7 +235,6 @@ for i in range(1, len(szo) + 1):
 print("\033[26;1H", end='')
 
 
-
 # Programozási tételek 1. (megszámolás, összegzés, maximum- és minimum-kiválasztás, eldöntés, kiválasztás, keresés)
 
 # ez hasznos lesz:          http://info.nytta.hu/temak/prog/elemi_tetelek_of.pdf
@@ -242,7 +244,7 @@ print("\033[26;1H", end='')
 
 # 1. feladat
 
-szamok = [random.randint(10,99) for i in range(200)]
+szamok = [random.randint(10, 99) for i in range(200)]
 print(' '.join([str(szam) for szam in szamok]))
 
 # a.    -    összegzés - sum(szamok) helyett
@@ -303,7 +305,8 @@ else:   # most megírom külön a kiválasztást is
     index = 0
     while szamok[index] % 15 != 0:
         index += 1
-    print(f"A számok között szerepel a 15-nek többszöröse, pl.: {szamok[index]}")
+    print(
+        f"A számok között szerepel a 15-nek többszöröse, pl.: {szamok[index]}")
 
 # g. egyszerűbb megoldás
 index = 0
@@ -312,7 +315,8 @@ while index < 200 and szamok[index] % 15 != 0:
 if index == 200:
     print("Nincs a számok között 15-nek egyik többszöröse sem.")
 else:
-    print(f"A számok között szerepel a 15-nek többszöröse, pl.: {szamok[index]}")
+    print(
+        f"A számok között szerepel a 15-nek többszöröse, pl.: {szamok[index]}")
 
 # g. 'mondjukhogyprecíz' (nem elemi) megoldás
 tobbszorosok = []
@@ -324,3 +328,111 @@ if len(tobbszorosok) > 0:
     tobbszorosok.sort()
     for tobbszoros in tobbszorosok:
         print(tobbszoros)
+
+
+# I am really overwhelmed by my dev. internship - first week was tough and there are many more left to survive.
+# From now, I will not care anymore about writing the "ideal" solution.
+# Feel free to contribute if you want to maintain the style before:
+# https://github.com/faludig/faludig.nytta.hu/tree/master/tananyag/EP/feladatok
+
+# 2. feladat
+db = 120
+dobasok = [random.randint(1, 6) for i in range(db)]
+print(' '.join([str(dobas) for dobas in dobasok]))
+
+# a.
+gyakorisagok = {}
+for dobas in dobasok:
+    if dobas not in gyakorisagok:
+        gyakorisagok[dobas] = 1
+    else:
+        gyakorisagok[dobas] += 1
+
+for dobas in gyakorisagok:
+    print(f"A(z) {dobas} gyakorisága: {gyakorisagok[dobas]}.")
+
+# b.
+if db / 6 in gyakorisagok.values():
+    print("Van olyan szám, amelynél a dobások száma az összdobások 1/6-od része.")
+else:
+    print("Nincs olyan szám, amelynél a dobások száma az összdobások 1/6-od része.")
+
+# c.
+max_ertek = max(gyakorisagok.values())
+max_helyek = [kulcs for kulcs in gyakorisagok if gyakorisagok[kulcs] == max_ertek]
+print("A sorozat módusza(i):")
+for szam in max_helyek:
+    print(szam)
+
+# d.
+min_ertek = min(gyakorisagok.values())
+min_helyek = [kulcs for kulcs in gyakorisagok if gyakorisagok[kulcs] == min_ertek]
+print("A legkevesebbszer előforduló számok:")
+for szam in min_helyek:
+    print(szam)
+
+# e.
+print("A következő számokat dobtuk legalább 10-szer:")
+for szam in gyakorisagok:
+    if gyakorisagok[szam] >= 10:
+        print(szam)
+
+# f. - igen, azért azt még tartom, hogy a feladatsorok szerint még nem volt while
+elofordul = False
+for i in range(len(dobasok) - 1):
+    if not elofordul and dobasok[i] == dobasok[i + 1]:
+        elofordul = True
+        print("Létezik 2 dobás, ahol egymás után ugyanazt az eredményt kaptuk.")
+
+
+# 3. feladat
+
+db_diakok = 20
+diakok = [random.randint(160, 190) for i in range(db_diakok)]
+db_nalamagasabb = [sum(magasabb > diakok[i] for magasabb in diakok[:i]) for i in range(db_diakok)]
+print("Diákok sorszámai, akiket a legtöbb nála magasabb diák előzi meg:")
+for i in range(db_diakok):
+    if db_nalamagasabb[i] == max(db_nalamagasabb):
+        print(f"{i + 1}.")
+
+
+# 4. feladat
+
+db_meres = 50
+min_magassag = 100
+max_magassag = 2000
+meresek = [random.randint(min_magassag, max_magassag) for i in range(db_meres)]
+
+#a. és b.
+db_hegycsucs = 0
+min_hegycsucs = max_magassag
+for i in range(1, db_meres - 1):
+    if meresek[i - 1] < meresek[i] > meresek[i + 1]:
+        db_hegycsucs += 1
+        if meresek[i] < min_hegycsucs:
+            min_hegycsucs = meresek[i]
+
+print(f"A hegycsúcsok száma: {db_hegycsucs}.")
+if db_hegycsucs > 0:
+    print(f"A legalacsonyabb hegycsúcs {min_hegycsucs} m magas.")
+
+
+# 5. feladat
+
+db_szavak = 4 # legfeljebb 20
+szavak = [input(f"{i + 1}. szó: ") for i in range(db_szavak)]
+
+hossz_leghosszabb = 0
+sum_szavakhossza = 0
+
+for szo in szavak:
+    hossz = len(szo)
+    sum_szavakhossza += hossz
+    if hossz > hossz_leghosszabb:
+        hossz_leghosszabb = hossz
+
+print(f"A szavak átlagos hossza: {sum_szavakhossza / db_szavak} karakter.")
+print("A leghosszabb szó/szavak:")
+for szo in szavak:
+    if len(szo) == hossz_leghosszabb:
+         print(szo)
