@@ -2,8 +2,7 @@ body {
     background: #BEC089;
 }
 
-body,
-a {
+body, a {
     color: #CC0000;
 }
 
@@ -11,11 +10,7 @@ a {
     background: #E7D9B6;
 }
 
-header,
-nav,
-footer,
-h1,
-.kep {
+header, nav, footer, h1, .kep {
     text-align: center;
 }
 
@@ -29,8 +24,6 @@ div.egesz {
     width: 80%;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     text-shadow: 1px 1px black;
 }
