@@ -1,4 +1,9 @@
-body, a {
+body {
+    background: #BEC089;
+}
+
+body,
+a {
     color: #CC0000;
 }
 
@@ -6,6 +11,26 @@ body, a {
     background: #E7D9B6;
 }
 
-header, nav, footer, h1, .kep{
+header,
+nav,
+footer,
+h1,
+.kep {
     text-align: center;
+}
+
+div.egesz {
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border: 3px solid darkred;
+    border-radius: 0px;
+    box-shadow: 2px 2px black;
+    width: 80%;
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 1px 1px black;
 }
