@@ -1,0 +1,13 @@
+Angol óra
+
+Készítsen bemutatót angol nyelvtanulás segítésére!
+
+A címoldalon szerepeljen a tananyag: "Animals" és a készítő neve! A második dián jelenítse meg a kapott képeken található állatokat, és adja meg magyar, illetve angol megnevezésüket (cica = kitten; róka = fox; malac = pig; majom = monkey; szamár = donkey, nyúl = rabbit)!
+
+Az állatok képe és megnevezése egyszerre jelenjen meg, de mindegyik más módon!
+
+A következő dián csoportosítsa az állatokat táplálkozásuk (húst evő = meat-eater, növényeket evő = plant-eater) szerint! Jelenítsen meg két ellipszist (halmazábrához), a megfelelő angol nyelvű feliratokkal együtt, helyezze el ezután egyenként az állatokat a megfelelő ellipszisek belsejében, illetve a mindenevőket a két ellipszis metszetében!
+
+Minden egyes állat megjelenése után automatikusan jelenjen meg egy felirat, mely csak a következő kattintásig látszik! "Kitten is carnivous" illetve ennek megfelelően a többi állatra is (húsevő = carnivous; növényevő = herbivous; mindenevő = omnivous)!
+
+A háttér legyen színes, de ne sablonos, illeszkedjen a képek, a szöveg színéhez!

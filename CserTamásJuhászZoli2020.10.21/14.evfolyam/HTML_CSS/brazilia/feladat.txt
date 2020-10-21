@@ -1,0 +1,34 @@
+Brazília feladat
+----------------
+
+Tartalmi elemek
+
+	- Elrendezés, tördelés a minta szerint
+	- 1-es és 3-as szintű címsor használata
+	- minta szerinti helyeken vízszintes vonal
+	- kép beillesztése a minta szerint
+	- linkek:
+		Az "A csodák országa" bekezdésében
+			* Planalto Brasileiro hegyvidék - új ablakban megnyílik a planalto.jpg fájl
+			* Amazonas-medence - új ablakban megnyílik az amasonas.jpg fájl
+			* Paraguay-medence - új ablakban megnyílik a paraguay.jpg fájl
+		Az "A rioi karnevál" bekezdésben
+			* Rio De Janeiro - új ablakban megnyílik a város wiki oldalra (cím a forrásban)
+		A "Beutazási szabályok" bekezdésben
+			* DUTY FREE BRASIF - új ablakban megnyílik a repülőtéri üzlet oldala (cím a forrásban)
+		A "Védőoltás" bekezdésben
+			* magyar egészségügyi hatóságoknál - új ablakban megnyílik a nemzeti népegészségügyi központ oldala (cím a forrásban)
+		Oljal alján lévő nyíl - feldob az oldal tetejére
+		
+Formázás külső vagy belső stíluslappal
+
+	- oldalháttér: back.jpg
+	- a teljes oldalra vonatkozóan Verdana betűtípus, az eredeti méret 115%-a
+	- tartalmi rész háttere fehér, 70%-ot foglal el, belső margók alul felül 5 képpont, oldalt 40 képpont, középen elhelyezve
+	- linkek színe zöld, vastagított betű, aláhúzás nélkül
+	- linkek színe szürke, ha fölé állok az egérrel
+	- vízszintes vonalak 2 képpont vastagok, zöldek, egyszerű vonalak (border beállítás)
+	- a nagy kép 600 képpont széles
+	- a nyíl 50 képpont széles
+
+	- minden egyéb, fent nem említett formázás a minta szerint

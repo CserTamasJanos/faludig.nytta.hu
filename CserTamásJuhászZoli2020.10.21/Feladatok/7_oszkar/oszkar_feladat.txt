@@ -1,0 +1,13 @@
+Weblap szövege: oszkar_forras.txt
+Kép: oszkar.jpg
+
+Mentés: oszkar.htm
+Oldal címe: Oszkár
+Színek: szabadon megválaszthatóak
+Cím: 1-es szintû címsor
+Elhelyezés: 800 képpont széles szegély nélküli táblázatban
+Betûtípus: Times New Roman és Arial
+Igazítások: sorkizárt
+Linkek:
+"Magyar Uszkár Klub" - http://www.uszkar.hu - új oldalra nyíljon
+Kép - csak a kép megtekintése új oldalon

@@ -1,0 +1,12 @@
+Labradorok feladat
+------------------
+
+* Belsõ stílussal dolgozzon!
+* Készítsen a "labrador_minta" alapján weblapot "labrador.html" néven!
+* Minden kutyát ábrázoló kép az eredeti méretének a fele.
+* Minden kutyát ábrázoló kép egy hivatkozás, amely az adott képet eredeti méretében 
+  nyitja meg külön ablakban! 
+* Ránézésre ne látszódjon a képeken, hogy hivatkozás!
+* Az oldal alján lévõ "kattints ide" szöveg egy hivatkozás, 
+  amely a http://www.kutya.hu weboldalt nyitja meg külön ablakban! 
+* Ügyeljen az arányokra, elrendezésre!

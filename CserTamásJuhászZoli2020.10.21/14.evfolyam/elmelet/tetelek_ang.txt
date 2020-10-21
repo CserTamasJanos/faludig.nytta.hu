@@ -1,0 +1,25 @@
+angol tételekből:
+-----------------
+
+8. Webfejlesztés tanfolyamon kell előadást tartania. Magyarázza el, mi a reszponzív weboldal!
+– Ismertesse a különböző eszközök eltérő méretéből adódó problémákat!
+– Hogyan lehet ugyanazt a tartalmat többféle eszközön is megjeleníteni?
+Kulcsszavak, fogalmak:
+– Kijelzők méretei
+– HTML, CSS, @media
+– Bootstrap
+
+11. Önt bízták meg egy junior kolléga kódjának átnézésével. Azt vette észre, hogy az elkészült weblap formázása „inline style” használatával valósul meg. Magyarázza el a kollégának, miért érdemes inkább CSS fájlt használni!
+– Udvariasan közölje a kollégával, hogy mivel bízták meg, és milyen hibát talált!
+– Design elemek változása esetén nem kell a HTML/PHP/stb. kódot változtatni.
+Kulcsszavak, fogalmak:
+– Stílusosztályok használata
+– CSS szelektorok
+
+17. Projekt vezetőként dolgozik egy szoftverfejlesztő cégnél. Feladatként kapja egy ingatlan iroda weboldalának megvalósítását. Az oldalon az iroda aktuális hirdetései szerepelnének képekkel, leírásokkal.
+– Mondja el milyen lépésekből állna a projekt megvalósítása!
+– Milyen szaktudással rendelkező kollégák szükségesek a projekt csapatba?
+– Fogalmazzon meg egy álláshirdetést az egyik pozícióra!
+Kulcsszavak, fogalmak:
+– Programozó, web designer
+– Projekt rövid leírása

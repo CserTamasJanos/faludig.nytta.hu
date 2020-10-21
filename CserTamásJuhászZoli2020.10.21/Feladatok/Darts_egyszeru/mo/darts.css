@@ -1,0 +1,15 @@
+body {
+	color: #cc0000;
+}
+header, nav, footer, h1, .kep {
+	text-align: center;
+}
+header {
+	background-color: #ffffff;
+}
+nav, footer {
+	background-color: #e7d9b6;
+}
+a {
+	color: #cc0000;
+}

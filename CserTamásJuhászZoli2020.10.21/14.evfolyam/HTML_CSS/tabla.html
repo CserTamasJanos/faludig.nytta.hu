@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table, td {
+			padding: 20px;
+			border: 2px black solid;
+			margin: 5px;
+		}
+		table {
+			background-color: yellow;
+		}
+		.piros {
+			background-color: red;
+		}
+		.zold {
+			background-color: green;
+		}
+		td {
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<p>Táblázat</p>
+	<table>
+		<tr class="piros"> <td>1s 1c</td> <td>1s 2c</td> <td class="zold">1s 3c</td> </tr>
+		<tr> <td>2s 1c</td> <td>2s 2c</td> <td>2s 3c</td> </tr>
+	</table>
+	
+	<p>Táblázat 2.</p>
+	<table>
+		<tr> <td colspan="2">1s 1c</td> <!-- <td>1s 2c</td> --> <td>1s 3c</td> </tr>
+		<tr> <td>2s 1c</td> <td>2s 2c</td> <td>2s 3c</td> </tr>
+	</table>
+	
+	<p>Táblázat 3.</p>
+	<table>
+		<tr> <td colspan="2">1s 1c</td> <!-- <td>1s 2c</td> --> <td>1s 3c</td> </tr>
+		<tr> <td>2s 1c</td> <td rowspan="2">2s 2c</td> <td>2s 3c</td> </tr>
+		<tr> <td>3s 1c</td> <!-- <td>3s 2c</td> --> <td>3s 3c</td> </tr>
+	</table>
+	
+	<p>Táblázat 4.</p>
+	<table>
+		<tr> <td >1s 1c</td> <td>1s 2c</td> <td>1s 3c</td> </tr>
+		<tr> <td>2s 1c</td> <td>2s 2c</td> <td>2s 3c</td> </tr>
+		<tr> <td>3s 1c</td> <td>3s 2c</td> <td>3s 3c</td> <td>3s 4c</td> </tr>
+		<tr> <td>4s 1c</td> </tr>
+	</table>
+	
+</body>
+</html>

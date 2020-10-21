@@ -1,0 +1,31 @@
+FELADAT
+
+Négy weblapot kell létrehozni: 
+	index.html, 
+	spacewar.html, 
+	pong.html, 
+	gameboy.html. 
+
+Forrásszöveg: szgjatek_szoveg.txt
+
+Egységes oldalszerkezet kialakítása az szgjatek_minta.jpg alapján
+ 
+A formázást egy külső stíluslappal az alábbi leírás és a minta alapján:
+* Az oldalak háttere a hatter.jpg kép.
+* Tartalom szélessége 1000 képpont, a böngészőablak közepén elhelyezve.
+* A tartalmi rész háttere #F5DEB3 színű, belső margója 10 képpont.
+* A szövegek #8B4513 színűek.
+* Szöveg mérete nagyobb legyen az alapértelmezettnél.
+* Szöveg igazítása sorkizárt, tördelés a minta szerint.
+* Az oldalak neve egyezzen meg az oldalon látható címmel.
+* A címsor középre igazított.
+* A címsor alatt menüként a mintán is látható képek szolgálnak:
+	- c64.png mutasson az index.html oldalra
+	- space.png mutasson az spacewar.html oldalra
+	- pong.png mutasson a pong.html oldalra
+	- game.png mutasson a gameboy.html oldalra
+* Minden képnek legyen 5px belső margója
+* Bármely kép fölé állásakor változzon a belső margó úgy, hogy "feljebb" ugorjon az adott kép.   
+* A pongdoboz.png képre kattintva a kép új ablakban jelenjen meg. 
+* A felsorolás jele kis négyzet legyen
+* A felsorolás az alapértelmezettnél beljebb kezdődjön.

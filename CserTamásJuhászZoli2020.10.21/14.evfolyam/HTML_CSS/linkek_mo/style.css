@@ -1,0 +1,61 @@
+body {
+	background-color: lightgray;
+}
+div.full {
+	width: 90%;
+	margin: auto;
+}
+header {
+	text-align: center;
+}
+nav {
+	text-align: center;
+}
+nav ul {
+	padding-left: 0px;
+}
+nav ul li {
+	display: inline-block;
+	width: 200px;
+	height: 35px;
+	background-image: url(gomb.png);
+	padding-top: 15px;
+}
+nav ul li.aktiv {
+	background-image: url(gombaktiv.png);
+}
+nav ul li:hover {
+	background-image: url(gombaktiv.png);
+}
+nav ul li a {
+	text-decoration: none;
+	color: green;
+	
+}
+nav ul li a.aktiv {
+	color: yellow;
+}
+h3 {
+	text-align: center;
+}
+.zaszlo {
+	border: 5px gray ridge;
+	width: 80%;
+	margin: auto;
+}
+#piros, #feher, #zold {
+	height: 150px;
+}
+#piros {
+	background-color: red;
+}
+#feher {
+	background-color: white;
+}
+#zold {
+	background-color: green;
+}
+
+
+
+

@@ -1,0 +1,42 @@
+﻿Téli olimpia feladat
+----------------------
+
+Tartalmi elemek
+
+	- fejléc 
+		felirat.jpg
+		
+	- menü
+		fooldal_g.png - link - index.html oldalra mutat
+		olimpiak_g.png - link - olimpiak.html oldalra mutat
+		sportok_g.png - link - sportok.html oldalra mutat
+		
+	- szöveges rész
+		címek: kettes szintű címsor
+		bekezdések a minta és a források szerint
+		felsorolás szimbólumos
+		hivatkozás új ablakban nyílik meg
+		index: tortenet.txt
+		olimpiak: olimpiak.txt
+		sportok: sportok.txt
+
+Külső stíluselemek
+
+	- oldal háttér: #000066;
+	- teljes tartalom 10000 képpont szélességben középre helyezve
+	- fejléc alsó és felső fehér, 3 képpont vastagságú síma vonallal rendelkezik
+	- menüsor tartalma középen
+	- menüsor képei 100 képpont szélességűek és 5 képpont belső margóval rendelkeznek
+	- a szöveges rész háttere fehér (#ffffff) betű színe megegyezik az oldal hátterével és 20 képpont belső margóval rendelkezik
+
+Belső stíluselemek (sportok.html oldalon)
+
+	- teljes felsorolás bal oldali belső margója 470 képpont
+	- a felsorolás elemeinek képe a felsorolas.jpg
+	- a felsorolás pontjai 10 képpont felső belső margóval rendelkeznek
+	- a hivatkozás középre igazított, betűszín kék, vastagított és döntött stílussal szerepel, és nincs aláhúzva
+	
+Sorközi stíluselemek (sportok.html oldalon)
+
+	- az egyik kép jobbra, másik balra igazított
+	- a címsor középre van igazítva

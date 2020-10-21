@@ -1,0 +1,22 @@
+body {
+	font-family: Verdana;
+}
+.full {
+	background-color: white;
+}
+.nyil {
+	text-align: right;
+}
+.karneval {
+	text-align: center;
+}
+hr {
+	color: green;
+}
+a {
+	color: green;
+	font-weight: bold;
+}
+h1 {
+	text-align: center;
+}

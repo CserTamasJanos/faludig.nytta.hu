@@ -1,0 +1,64 @@
+﻿Pöfeteg feladat
+....................
+
+Elkészítendő fájlok
+---------------------
+pofeteg.html
+bimbos.html
+galeria.html
+style.css
+
+Szerkezet
+---------------------
+Az oldalak szerkezete egységes, kialakítás a minták szerint
+	(header, main, h1, h2, stb.)
+pofeteg oldalon felsorolás kialakítása
+bimbos oldalon táblázat kialakítása
+
+Linkek
+---------------------
+* pofeteg oldalon
+	felsorolás bekezdésben:
+		"Bimbós pöfeteg" -> bimbos.html
+		"Galériában" -> galeria.html
+		"Miskolci Gombász Egyesület" -> külön ablakban http://www.miskolcigombasz.hu/fajlista/ 
+	Bimbós pöfeteg bekezdésben
+		"gyilkos galóca" -> külön ablakban gyilkos.png
+	Szürke pöfeteg
+		"feketedő pöfeteggel" -> külön ablakban feketedo.jpg
+	zöld nyíl -> oldal tetejére ugrik
+* bimbos oldalon
+		"gyilkos galóca" -> külön ablakban gyilkos.png
+		"körtealakú pöfeteg" -> külön ablakban kortealaku.jpg
+		"Vissza" -> pofeteg.html
+* galeria oldalon
+		minden kép kattintásra külön ablakban jelenjen meg
+		"Vissza" -> pofeteg.html
+		
+Stílus
+---------------------
+Külső fájlban
+Szükség szerint belső és helyi
+
+oldal háttérképe: kispofeteg.jpg
+ismétlődés és fixálás beállítása:
+	{ background-repeat: repeat-y;
+	background-attachment: fixed; }
+
+felsorolás szimbóluma: gomba.png
+
+galéria képei 120 képpont magasak
+
+Használt színek
+	Oldalháttér: #ffffcc
+	Egyéb háttér: #ffffff
+	Szövegek: #664400
+	Címsor szövegek: #000000
+	Linkek: #cc9900
+	Linkek, amikor fölé állunk: #996600
+	Kiemelt szöveg: #ff0000
+
+Minden egyéb formázás (margók, belső margók, igazítások, stb.) a minta alapján
+
+
+

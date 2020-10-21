@@ -1,0 +1,33 @@
+Neptunusz feladat
+-----------------
+
+Fájlok, amelyeket létre kell hozni:
+	2bolygo.html
+	neptunusz.html
+	style.css
+	
+Tartalom és szerkezet
+---------------------
+	címsorok: h1, h2, h3
+	bekezdések
+	számozott lista
+	linkek 
+		2bolygo.html oldalon:
+			bolygo2.jpg - neptunusz.html oldalra mutat
+		neptunusz.html oldalon:
+			"Johann Gottfried Galle" - www.gothard.hu/astronomy/ oldalra mutat, külön ablakban nyílik meg
+			"Vissza" - bolygo2.html oldalra mutat
+			(a mintán nem látszik)
+	tagolás a minta szerint
+		
+Stílus
+------
+	háttérszín: #00003a
+	háttérkép a 2bolygo.html oldalon: ur.jpg
+	szöveg szín: #00ffff
+	h1 szöveg méret: alapértelmezettnél nagyobb
+	h2 szöveg méret: alapértelmezettnél nagyobb, de h1-nél kisebb
+	h2 szöveg szín: #ffff00
+	link színe: #2bafd0 (nincs aláhúzva)
+		
+	minden egyéb formázás a minta szerint

@@ -1,0 +1,48 @@
+body {
+	background-color: gray;
+	font-family: Verdana;
+}
+div.full {
+	background-color: lightgray;
+	width: 800px;
+	padding: 10px;
+	margin: auto;
+	border: 2px black solid;
+}
+header img {
+	object-fit: over;
+}
+nav {
+	background-color: black;
+	font-variant: small-caps;
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+nav a {
+	color: white;
+}
+nav a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+h1 {
+	text-align: center;
+}
+p {
+	text-align: justify; /* mobilon inkább ne */
+}
+.kiemelt {
+	color: green;
+	font-weight: bold;
+}
+a {
+	color: gray;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+
+
+
+

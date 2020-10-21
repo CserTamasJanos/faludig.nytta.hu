@@ -1,0 +1,30 @@
+Hozzon létre az alábbi leírás és a minta alapján egy weboldalt, ami a Halma játékról szól!
+
+Létrehozandó fájlok:
+- halma.html
+- halma.css
+
+Tartalmi beállítások:
+- Az oldal tartalma a halmaforras.txt fájlban található
+- Állítsa be az oldal nyelvét magyarra, a kódolást utf-8-ra
+- Állítson be hivatkozást a halma.css stíluslapra
+- Az oldal neve "Halma" legyen
+- Alakítsa ki az oldal szerkezetét, amely egy 
+	táblázat két sorral és két oszloppal,
+	az alsó sorban alkalmazzon cellaösszevonást
+- Helyezze el a megfelelõ cellákba a megfelelõ elemeket
+- Alkalmazzon 1-es és 2-es szintû címsort
+- Alakítsa ki a bekezdéseket
+- Alakítsa ki a felsorolást
+- Az "Ugrani is szabad" szöveget alakítsa linkké, amely a halmaugr.gif képre mutat
+	a kép új ablakban nyiljon meg
+- Az alsó képet "kep" azonosító kijelölõvel ellátott dobozba helyezze el
+
+Stílusbeállítások:
+- az oldal háttérszíne indianred, szövege fekete
+- az egyes címsor színe fehér, és középre igazított
+- a táblázat szélessége a böngészõablak 80%-a, háttere darksalmon színû, 
+	5 képpont belsõ margóval rendelkezik és ridge típusú vonallal keretezett
+- a cellák belsõ margója 10 képpont, és szintén ridge típusú vonallal keretezettek
+- #kep azonosító jelölõvel ellátott doboz tartalma középre igazított
+- a link színe indianred, és a szöveg vastagított

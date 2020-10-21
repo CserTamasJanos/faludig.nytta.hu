@@ -1,0 +1,30 @@
+Bimbós pöfeteg feladat
+----------------------
+
+Fájlok, amelyeket létre kell hozni:
+	bimbos.html
+	bimbos.css
+	
+Szerkezet
+---------
+	fejléc
+	h1
+	main
+		táblázat (6*2)
+	bekezdésen bleüli kiemelés jelölése (<span class="kijelölés_neve">...</span>)
+	szövegek, amelyeket meg kell jelölni:
+		"Vigyázzunk, mert könnyen összetéveszthető a gyilkos galóca burokkal fedett egyedeivel."
+		ezen belül pluszban:
+		"gyilkos galóca"
+	link:
+		"körtealakú pöfeteg" - kortealaku.jpg fájlra mutat, külön ablakban nyílik meg
+Stílus
+------
+	oldal háttérszín: #e0eee0
+	tábla szélessége: 800 képpont
+	bal oldali cellák szélessége: 200 képpont
+	cellák háttérszínei: #bbffbb, #ffefd5
+	
+	minden egyéb formázás a minta szerint
+	
+
